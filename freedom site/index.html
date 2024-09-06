@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio and background free site</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="radio-container">
+        <h2>Online Radyo</h2>
+        <div class="radio-controls">
+            <div class="radio-button" id="playButton">Oynat</div>
+            <div class="radio-button" id="pauseButton">Durdur</div>
+        </div>
+
+        <!-- Radyo İstasyonu Seçimi -->
+        <div class="station-list">
+            <label for="stationSelect">Radyo İstasyonu:</label>
+            <select id="stationSelect">
+                <option value="https://stream.live.vc.bbcmedia.co.uk/bbc_radio_one">BBC Radio 1</option>
+                <option value="http://stream.whus.org:8000/whusfm">WHUS Radio</option>
+                <option value="http://icecast.omroep.nl/radio1-bb-mp3">Radio 1 (Hollanda)</option>
+            </select>
+        </div>
+
+        <!-- Radyo Çalar -->
+        <audio id="radioPlayer" controls></audio>
+
+        <!-- Arka Plan Resmi Yükleme -->
+        <div class="file-input">
+            <label for="backgroundImage">Arka Plan Resmi Yükle:</label>
+            <input type="file" id="backgroundImage" accept="image/*">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
